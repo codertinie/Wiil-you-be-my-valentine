@@ -1,0 +1,81 @@
+body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffccdc;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            transition: background-color 2s ease-in-out;
+        }
+        .container {
+            max-width: 90%;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #d63384;
+        }
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 200px;
+            position: relative;
+        }
+        .yes {
+            background-color: #ff4d6d;
+            color: white;
+        }
+        .no {
+            background-color: #6c757d;
+            color: white;
+        }
+        .hidden {
+            display: none;
+        }
+        #response {
+            font-size: 2em;
+            color: #ff4d6d;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+        }
+        .show-message {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+        .dancing-gif {
+            width: 150px;
+            height: auto;
+            position: absolute;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            button {
+                font-size: 1.2em;
+                width: 150px;
+            }
+        }
+        @keyframes fall {
+            from { transform: translateY(-10px); opacity: 1; }
+            to { transform: translateY(100vh); opacity: 0; }
+        }
