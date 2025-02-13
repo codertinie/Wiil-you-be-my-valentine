@@ -19,6 +19,7 @@ body {
         h1 {
             font-size: 2.5em;
             color: #d63384;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
         .buttons {
             margin-top: 20px;
